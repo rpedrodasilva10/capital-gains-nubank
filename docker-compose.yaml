@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  capital-gains:
+    image: 'capital-gains:latest'
+    stdin_open: true
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: capital-gains-app
